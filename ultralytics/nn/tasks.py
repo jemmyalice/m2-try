@@ -90,7 +90,7 @@ try:
 except ImportError:
     thop = None
 
-DynamicHead = None
+# DynamicHead = None
 
 class BaseModel(nn.Module):
     """The BaseModel class serves as a base class for all the models in the Ultralytics YOLO family."""

@@ -38,7 +38,7 @@ head:
 
   - [-1, 1, nn.Upsample, [None, 2, "nearest"]]
   - [[-1, 2], 1, Concat, [1]] # cat backbone P2
-  - [-1, 2, C3k2, [128, True]] # 19 (P2/4-xsmall)  # 小目标可以尝试将这里的False设置为True.
+  - [-1, 2, C3k2, [128, False]] # 19 (P2/4-xsmall)  # 小目标可以尝试将这里的False设置为True.
 
   - [-1, 1, Conv, [128, 3, 2]]
   - [[-1, 16], 1, Concat, [1]] # cat head P3
